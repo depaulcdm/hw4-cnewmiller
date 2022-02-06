@@ -30,6 +30,7 @@ repositories {
     mavenCentral()
 }
 jar {
+    baseName = project.name + '-all'
     from {
         configurations.runtimeClasspath.findAll {
             it.name.endsWith('jar')
